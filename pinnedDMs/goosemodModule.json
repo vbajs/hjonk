@@ -1,0 +1,12 @@
+{
+  "main": "index.js",
+
+  "name": "Pinned DMs",
+  "description": "Pin DMs higher up on the DM list.",
+
+  "tags": ["quick-actions"],
+
+  "authors": ["150745989836308480"],
+
+  "version": "1.0.0"
+}
