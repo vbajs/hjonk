@@ -20,10 +20,6 @@ const Clickable = goosemod.webpackModules.findByDisplayName("Clickable");
 const DropdownArrow =
   goosemod.webpackModules.findByDisplayName("DropdownArrow");
 
-const PrivateChannelClasses = goosemod.webpackModules.findByProps(
-  "privateChannels",
-  "searchBar"
-);
 const PrivateChannelHeaderClasses = goosemod.webpackModules.findByProps(
   "privateChannelsHeaderContainer"
 );
@@ -76,12 +72,6 @@ function unpinDM(id) {
 }
 
 function refreshPrivateChannels() {
-  goosemod.reactUtils
-    .getOwnerInstance(
-      document.querySelector(`.${PrivateChannelClasses.privateChannels}`)
-    )
-    .forceUpdate();
-
   // Force update sidebar (jank DOM way)
   const privateChannelScroller = document.querySelector(
     `[class^="privateChannels-"] > [class^="scroller-"]`
@@ -130,9 +120,6 @@ function createPinnedSection() {
           goosemod.storage.set("pinnedDMs_collapsed", collapsed);
 
           refreshPrivateChannels();
-          goosemod.reactUtils
-            .getOwnerInstance(document.querySelector(".pinned-dms-container"))
-            .forceUpdate();
         },
         "aria-expanded": !collapsed,
       },
