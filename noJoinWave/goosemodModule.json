@@ -1,0 +1,12 @@
+{
+  "main": "index.js",
+
+  "name": "No Join Message Wave",
+  "description": "Removes the \"Wave to say hi!\" button",
+
+  "tags": [],
+
+  "authors": ["150745989836308480"],
+
+  "version": "1.0.0"
+}
