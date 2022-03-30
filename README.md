@@ -1,3 +1,6 @@
+# **I no longer develop anything for GooseMod. Some but not all things are moved over to [Cumcord](https://cumcord.com), you can find my Cumcord plugins [here](https://gitlab.com/Cynosphere/cumcord-plugins)**
+You're free to fork and continue this repo if you want.
+
 # hjonk
 A collection of modules for GooseMod
 
